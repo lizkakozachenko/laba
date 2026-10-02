@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="GreenCare — приложение для ухода за комнатными растениями">
+  <title>GreenCare — Уход за растениями</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">🌿</span>
+        <span class="logo__text">GreenCare</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+          <li><a href="plants.html" class="nav__link">Мои растения</a></li>
+          <li><a href="calendar.html" class="nav__link">Календарь</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">🌙</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+  <div class="hero__content">
+    <h1 class="hero__title">Заботьтесь о растениях<br>правильно</h1>
+    <p class="hero__subtitle">
+      GreenCare напомнит о поливе, подкормке и поможет подобрать
+      уход с учётом погоды в вашем городе.
+    </p>
+    <div class="hero__actions">
+      <a href="plants.html" class="btn btn--primary">Начать</a>
+      <a href="#features" class="btn btn--ghost">Узнать больше</a>
+    </div>
+  </div>
+
+  <div class="hero__image">
+    <img src="./assets/растение.png" alt="Свисающее комнатное растение" class="hero__plant-img">
+  </div>
+</section>
+
+    <section class="features" id="features">
+      <h2 class="section-title">Возможности</h2>
+      <div class="features__grid">
+        <article class="feature-card">
+          <h3 class="feature-card__title">Полив по расписанию</h3>
+          <p class="feature-card__text">Интервалы корректируются под погоду в вашем городе.</p>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-card__title">Календарь ухода</h3>
+          <p class="feature-card__text">Все задачи на день, неделю и месяц в одном месте.</p>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-card__title">Достижения</h3>
+          <p class="feature-card__text">Отслеживайте прогресс и получайте награды.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 GreenCare. Все права защищены.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
